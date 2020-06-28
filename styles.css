@@ -1,0 +1,102 @@
+/* Master Styles */
+body {
+    margin: 0px;
+    
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Nav Styles */
+.navWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+
+}
+.leftSide{
+    display: flex;
+}
+
+.navWrapper > .leftSide > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+
+}
+
+.navLinkWrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.navLinkWrapper a{
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.navLinkWrapper:hover{
+    border-bottom: 1px solid black;
+
+}
+.navLinkWrapper a:hover{
+    color: black;
+}
+
+/* Portfolio Styles */
+.portfolioItemsWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.portfolioItemWrap {
+    position: relative;
+}
+
+.portfolioImgBack {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.imgTextWrap {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logoWrap img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.imgTextWrap .subtitle {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+
+.imgTextWrap:hover .subtitle {
+    font-weight: 600;
+    color: violet;
+}
+
+.imgDarken {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+

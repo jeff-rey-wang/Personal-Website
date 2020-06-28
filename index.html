@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Jeffrey Wang</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="navWrapper">
+                <div class="leftSide">
+                    <div class="navLinkWrapper">
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div class="navLinkWrapper">
+                        <a href="about.html">About</a>
+                    </div>
+                    <div class="navLinkWrapper">
+                        <a href="projects.html">Projects</a>
+                    </div>
+                    <div class="navLinkWrapper">
+                        <a href="contact.html">Contact</a>
+                    </div>
+            
+                </div>  
+                <div class="rightSide">
+                    <div class="brand">
+                        <div>JEFFREY WANG</div>                
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="contentWrapper">
+                <div class="portfolioItemsWrapper">
+
+                    <div class="portfolioItemWrap">
+                        <div class="portfolioImgBack" style="background-image:url(images/portfolio1.jpg)"></div>
+
+                        <div class="imgTextWrap">
+                            <div class="logoWrap">
+                                <img src="images/logos/devcamp.png">
+                            </div>
+                            <div class="subtitle">I did something important</div>
+                        </div>
+
+                    </div>
+
+                    <div class="portfolioItemWrap">
+                        <div class="portfolioImgBack" style="background-image:url(images/portfolio2.jpg)"></div>
+
+                        <div class="imgTextWrap">
+                            <div class="logoWrap">
+                                <img src="images/logos/dashtrack.png">
+                            </div>
+                            <div class="subtitle">I did something important again</div>
+                        </div>
+
+                    </div>
+
+                    <div class="portfolioItemWrap">
+                        <div class="portfolioImgBack" style="background-image:url(images/portfolio3.jpg)"></div>
+
+                        <div class="imgTextWrap">
+                            <div class="logoWrap">
+                                <img src="images/logos/eventbrite.png">
+                            </div>
+                            <div class="subtitle">I did something important again and again</div>
+                        </div>
+
+                    </div>
+
+                    <div class="portfolioItemWrap">
+                        <div class="portfolioImgBack" style="background-image:url(images/portfolio4.jpg)"></div>
+
+                        <div class="imgTextWrap">
+                            <div class="logoWrap">
+                                <img src="images/logos/shop-hacker.png">
+                            </div>
+                            <div class="subtitle">I did something important again and again and again</div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        
+        </div>
+
+    </body>
+    <script>
+        const portItems = document.querySelectorAll('.portfolioItemWrapper')
+        
+        portItems.forEach(portItem => {
+            portItem.addEventListener('mousover', () => {
+                childNodes[1].classList.add('imgDarken');
+            })
+        })
+    </script>
+</html>>
