@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8"/>
-        <title>Jeffrey Wang</title>  
+        <meta charset="UTF=8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Jeffrey Wang</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     </head>
     <body>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <a href="#" class="navbar-brand">Jeffrey Wang</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class = "collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--Jumbotron-->
+        <div class="jumbotron text-center">
+            <h1>I'm Jeffrey Wang</h1>
+            <p>Nice to meet you :)</p> 
+        </div>
+        <!--About-->
+        <!--Projects-->
+        <!--Contact-->
         
         <div class="container">
             <div class="navWrapper">
@@ -92,13 +124,4 @@
         </div>
 
     </body>
-    <script>
-        const portItems = document.querySelectorAll('.portfolioItemWrapper')
-        
-        portItems.forEach(portItem => {
-            portItem.addEventListener('mousover', () => {
-                childNodes[1].classList.add('imgDarken');
-            })
-        })
-    </script>
-</html>>
+</html>
