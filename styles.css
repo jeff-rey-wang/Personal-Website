@@ -9,7 +9,15 @@ body {
     grid-template-columns: 1fr;
 }
 
+.jumbotron > h1{
+    text-align: center;
+}
+
 /* Nav Styles */
+.navbarMain{
+    text-align: left;
+}
+
 .navWrapper {
     display: flex;
     justify-content: space-between;
