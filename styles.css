@@ -9,13 +9,13 @@ body {
     grid-template-columns: 1fr;
 }
 
-.jumbotron > h1{
+.jumbotron{
     text-align: center;
 }
 
 /* Nav Styles */
-.navbarMain{
-    text-align: left;
+.navbar {
+    background-color: aquamarine;
 }
 
 .navWrapper {
@@ -55,6 +55,18 @@ body {
 }
 
 /* Portfolio Styles */
+
+.self-portrait {
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+{
+
+}
 .portfolioItemsWrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -65,7 +77,7 @@ body {
 }
 
 .portfolioImgBack {
-    height: 350px;
+    height: 300px;
     width: 100%;
     background-size: cover;
     background-position: center;
