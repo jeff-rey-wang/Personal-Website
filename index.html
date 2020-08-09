@@ -1,161 +1,44 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF=8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Jeffrey Wang</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="styles.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    </head>
-    <body>
-        <!--Navbar-->
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top" id="navbarMain"> 
-            <a href="#" class="navbar-brand">Jeffrey Wang</a>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>   
-            <div class = "collapse navbar-collapse" id="navbarMenu">
-                <ul class="navbar-nav ml-auto ">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#projects" class="nav-link">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+<html lang="en">
+<head>
+    <meta charset="UTF=8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jeffrey Wang</title>
 
-        <!--Jumbotron-->
-        <div class="jumbotron">
-            <h4>I'm Jeffrey Wang</h4>
-            <p>Nice to meet you!</p> 
-        </div>
-        <!--About-->
-        <div class="container" id="about">
-            <div class="row">
-                <div class="col-5">
-                    <div class="self-portrait" style="background-image:url(images/jeff0.jpg)">
-                    </div>
-                </div>
-                <div class="col-7" style="text-align: right;">
-                    <h1>About Me</h1>
-                    <p>
-                        I'm an undergraduate software engineering student
-                        at McMaster University, interested in UI/UX design.
-                        <br>
-                        <br>
-                        As firm believer in "experience is a better teacher
-                        than any textbook", I'm always on the lookout for
-                        mentors as well as new projects that pique my interest.
-                        One of my greatest passions, is using technology to
-                        tackle social issues, and enabling others to do the
-                        same.
-                        <br>
-                        <br>
-                        If you're interested, let's chat! I'd love the
-                        chance to showcase my skills.
-                    </p>
-                </div>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets\bootstrap-4.5.0-dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+</head>
+<body>
+    <!-- Main Body -->
+    <div class="main-container">
+        <!-- Aside -->
+        <div class="aside">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#">Jeffrey</a>
+            </div>
+            <!-- Nav -->
+            <div class="col" id="nav">
+                <div class="row"><a href="#"><i class="fa fa-home"></i> Home</a></div>
+                <div class="row"><a href="#"><i class="fa fa-coffee"></i> About</a></div>
+                <div class="row"><a href="#"><i class="fa fa-briefcase"></i> Projects</a></div>
+                <div class="row"><a href="#"><i class="fa fa-address-card"></i> Contact</a></div>
+            </div>
+            <div class="copyright-text">
+                &copy;
             </div>
         </div>
-        <!--Projects-->
-        <div class="container" id="projects">
-
+        <div class="main-content">
+            <section class="home section">
+            </section>
         </div>
-        <!--Contact-->
-        <div class="container" id="contact">
+    </div>
 
-        </div>
-        
-        <div class="container">
-            <div class="navWrapper">
-                <div class="leftSide">
-                    <div class="navLinkWrapper">
-                        <a href="index.html">Home</a>
-                    </div>
-                    <div class="navLinkWrapper">
-                        <a href="about.html">About</a>
-                    </div>
-                    <div class="navLinkWrapper">
-                        <a href="projects.html">Projects</a>
-                    </div>
-                    <div class="navLinkWrapper">
-                        <a href="contact.html">Contact</a>
-                    </div>
-            
-                </div>  
-                    <div class="brand">
-                        <div>JEFFREY WANG</div>                
-                    </div>                
-            </div>
+   
 
-            <div class="contentWrapper">
-                <div class="portfolioItemsWrapper">
-
-                    <div class="portfolioItemWrap">
-                        <div class="portfolioImgBack" style="background-image:url(images/portfolio1.jpg)"></div>
-
-                        <div class="imgTextWrap">
-                            <div class="logoWrap">
-                                <img src="images/logos/devcamp.png">
-                            </div>
-                            <div class="subtitle">I did something important</div>
-                        </div>
-
-                    </div>
-
-                    <div class="portfolioItemWrap">
-                        <div class="portfolioImgBack" style="background-image:url(images/portfolio2.jpg)"></div>
-
-                        <div class="imgTextWrap">
-                            <div class="logoWrap">
-                                <img src="images/logos/dashtrack.png">
-                            </div>
-                            <div class="subtitle">I did something important again</div>
-                        </div>
-
-                    </div>
-
-                    <div class="portfolioItemWrap">
-                        <div class="portfolioImgBack" style="background-image:url(images/portfolio3.jpg)"></div>
-
-                        <div class="imgTextWrap">
-                            <div class="logoWrap">
-                                <img src="images/logos/eventbrite.png">
-                            </div>
-                            <div class="subtitle">I did something important again and again</div>
-                        </div>
-
-                    </div>
-
-                    <div class="portfolioItemWrap">
-                        <div class="portfolioImgBack" style="background-image:url(images/portfolio4.jpg)"></div>
-
-                        <div class="imgTextWrap">
-                            <div class="logoWrap">
-                                <img src="images/logos/shop-hacker.png">
-                            </div>
-                            <div class="subtitle">I did something important again and again and again</div>
-                        </div>
-
-                    </div>
-
-
-                </div>
-            </div>
-        
-        </div>
-
-    </body>
+</body>
 </html>
