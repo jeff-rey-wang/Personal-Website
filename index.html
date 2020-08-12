@@ -3,14 +3,10 @@
 <head>
     <meta charset="UTF=8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jeffrey Wang</title>
 
     <!-- CSS Files -->
-    <link rel="stylesheet" href="assets\bootstrap-4.5.0-dist\css\bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 </head>
 <body>
     <!-- Main Body -->
@@ -22,32 +18,37 @@
                 <a href="#">Jeffrey</a>
             </div>
             <!-- Nav Toggle-->
-            <!-- Nav -->
-            <div class="col" id="nav">
-                <div class="row"><a href="#"><i class="fa fa-home"></i> Home</a></div>
-                <div class="row"><a href="#"><i class="fa fa-coffee"></i> About</a></div>
-                <div class="row"><a href="#"><i class="fa fa-briefcase"></i> Projects</a></div>
-                <div class="row"><a href="#"><i class="fa fa-address-card"></i> Contact</a></div>
+            <div class="nav-toggle">
+                <span></span>
             </div>
+            <!-- Nav -->
+            <ul class="nav">
+                <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fa fa-coffee"></i> About</a></li>
+                <li><a href="#"><i class="fa fa-briefcase"></i> Projects</a></li>
+                <li><a href="#"><i class="fa fa-address-card"></i> Contact</a></li>
+            </ul>
             <div class="copyright-text">
                 &copy; Jeffrey Wang 2020.
             </div>
         </div>
-        <div class="main-content">
+        <div class="main-content"></div>
             <!-- Home Section -->
             <section class="home section">
                 <div class="container">
                     <div class="landing">
-                        <img src="" alt="self-portrait" id="self-portrait">
+                        <img src="assets/img/jeff0.jpg" alt="self-portrait" class="dark-shadow">
                         <h1>Jeffrey Wang</h1>
-                        <p>Nice to meet you.</p>
+                        <p>Software Engineering Student</p>
+                        <div class="link-icon">
+                            <a href="#"><i class="fa fa-github"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-envelope"></i></a>
+                        </div>               
                     </div>
                 </div>
             </section>
         </div>
     </div>
-
-   
-
 </body>
 </html>

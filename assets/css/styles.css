@@ -24,16 +24,21 @@ body {
     background-color: #f2f2fc;
     min-height: 100vh;
     display: block;
+    padding: 0 30px;
 }
 .main-content {
-
     padding-left: 270px;
 }
 
 .container {
-    max-width: 110px;
+    max-width: 1100px;
     margin: auto;
-    background-color: red;
+    width: 100%;
+}
+
+.dark-shadow{
+    -webkit-box-shadow: rgba(48, 46, 77, 0.15) 0 0 20px;
+    box-shadow: rgba(48, 46, 77, 0.15) 0 0 20px;
 }
 
 /* Aside */
@@ -91,7 +96,7 @@ body {
 .aside .nav-toggle {
     height: 40px;
     width: 40px;
-    border: #e8dfec 1px solid;
+    border: #d4d4e3 1px solid;
     cursor: pointer;
     position: fixed;
     left: 300px;
@@ -99,8 +104,9 @@ body {
     z-index: 11px;
     border-radius: 5px;
     background-color: #fdf9ff;
-    display: -ms-flexbox;
-    display: flex;
+    /* display: -ms-flexbox;
+    display: flex; */
+    display: none;
     -ms-flex-align-items: center;
     align-items: center;
     -ms-flex-pack: center;
@@ -108,72 +114,157 @@ body {
 }
 
 .aside .nav-toggle span {
-    height: 2px;
-    width: 16px;
+    height: 5%;
+    width: 20px;
     display: inline-block;
+    position: relative;
     background-color: skyblue;
 }
 
-.aside #nav {
+.aside .nav-toggle span::before {
+    content: '';
+    height: 100%;
+    width: 20px;
+    position: absolute;
+    top:-7px;
+    left: 0px;
+    background-color: skyblue;
+
+}
+
+.aside .nav-toggle span::after {
+    content: '';
+    height: 100%;
+    width: 20px;
+    position: absolute;
+    top: 7px;
+    left: 0px;
+    background-color: skyblue;
+}
+
+.aside .nav {
     list-style: none;
     margin: 80px 0;
     padding: 0;
 }
 
-.aside #nav .row {
-    padding: 0 16px;
-    position: relative;
+.aside .nav li {
+    display: block;
     border-bottom: 1px solid #e8dfec;
 }
 
-.aside #nav .row a {
+.aside .nav li a {
     font-size: 16px;
     font-weight: 600;
     color:  #302e4d;
     text-decoration: none;
     line-height: 49px;
     display: block;
+    text-transform: capitalize;
 }
 
-.aside #nav .row a .fa {    
+.aside .nav li a .fa {    
     margin-right: 5px;
 }
 
-.aside #nav .row a::after {    
+.aside .nav li a::after {    
     content: "";
     position: relative;
     display: block;
     height: 2px;
-    left: 50%;
     bottom: 15%;
     background: skyblue;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
     width: 0;
   }
-.aside #nav .row a:hover {
+
+.aside .nav li a:hover {
+    padding-left: 3%;
     color: skyblue;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
-
 }
 
-.aside #nav .row a:hover::after {
-    width: 100%; 
-    left: 0; 
+.aside .nav li a:hover::after {
+    width: 103%;
+    margin-left: -3%;
 }
 
 .aside .copyright-text {
     font-size: 13px;
     color: #7d7d7d;
-    position: relative;
-    bottom: -230px;   
 }
 
+/* Homepage */
 .home {
     min-height: 100vh;
     display: -ms-flexbox;
-    display: flex;
+    display: flex;   
 }
+
+.home .landing {
+    text-align: center;
+}
+
+.home .landing img{
+    width: 20%;
+    height: auto;
+    border-radius: 50%;
+    display: inline-block;
+    border: skyblue solid 8px;
+}
+
+.home .landing h1{
+    font-size: 30px;
+    color: #302e4d;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    margin: 2% 0 1%;
+}
+
+.home .landing p{
+    font-size: 16px;
+    color: #504e70;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.home .landing .link-icon{
+    align-items: center;
+    margin-top: 1%;
+}
+
+.home .landing .link-icon a{
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 5px;
+    border-radius: 50%;
+    text-decoration: none;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3s ease;
+    background-color: #302e4d;
+}
+
+.home .landing .link-icon a:hover{
+    background-color: skyblue;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
 
 .jumbotron{
     text-align: center;
