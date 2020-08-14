@@ -26,6 +26,61 @@ body {
     display: block;
     padding: 0 30px;
 }
+
+.section .container {
+    padding: 60px 0 70px;
+}
+
+.section-title {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 65px;
+}
+
+.section-title h2{
+    font-size: 40px;
+    color: #302e4d;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    position: relative;
+}
+
+.section-title h2::before{
+    content: '';
+    height: 4px;
+    width: 90px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #3ec0f3;
+}
+
+.section-title h2::after{
+    content: '';
+    height: 4px;
+    width: 55px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+    background-color: #3ec0f3;
+}
+
+.row {
+    /* display:  -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; */
+    margin: 0 -15px;
+    position: relative;
+}
+
+.padd-15 {
+    padding: 0 15px;
+}
+
 .main-content {
     padding-left: 270px;
 }
@@ -40,6 +95,10 @@ body {
 .dark-shadow{
     -webkit-box-shadow: rgba(48, 46, 77, 0.15) 0 0 20px;
     box-shadow: rgba(48, 46, 77, 0.15) 0 0 20px;
+}
+
+.hidden {
+    display: none !important;  
 }
 
 /* Aside */
@@ -78,8 +137,8 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    border-top: skyblue 4px solid ;
-    border-left: skyblue 4px solid ;
+    border-top: #3ec0f3 4px solid ;
+    border-left: #3ec0f3 4px solid ;
 }
 
 .aside .logo a::after {
@@ -89,8 +148,8 @@ body {
     position: absolute;
     bottom: 0;
     right: 0;
-    border-bottom: skyblue 4px solid;
-    border-right: skyblue 4px solid;
+    border-bottom: #3ec0f3 4px solid;
+    border-right: #3ec0f3 4px solid;
 
 }
 
@@ -105,8 +164,9 @@ body {
     z-index: 11px;
     border-radius: 5px;
     background-color: #fdf9ff;
-    display: -ms-flexbox;
-    display: flex;
+    /* display: -ms-flexbox;
+    display: flex; */
+    display: none;
     -ms-flex-align-items: center;
     align-items: center;
     -ms-flex-pack: center;
@@ -118,7 +178,7 @@ body {
     width: 20px;
     display: inline-block;
     position: relative;
-    background-color: skyblue;
+    background-color: #3ec0f3;
 }
 
 .aside .nav-toggle span::before {
@@ -128,7 +188,7 @@ body {
     position: absolute;
     top:-7px;
     left: 0px;
-    background-color: skyblue;
+    background-color: #3ec0f3;
 
 }
 
@@ -139,7 +199,7 @@ body {
     position: absolute;
     top: 7px;
     left: 0px;
-    background-color: skyblue;
+    background-color: #3ec0f3;
 }
 
 .aside .nav {
@@ -173,7 +233,7 @@ body {
     display: block;
     height: 2px;
     bottom: 15%;
-    background: skyblue;
+    background: #3ec0f3;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     width: 0;
@@ -181,7 +241,7 @@ body {
 
 .aside .nav li a:hover {
     padding-left: 3%;
-    color: skyblue;
+    color: #3ec0f3;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
@@ -213,7 +273,7 @@ body {
     height: auto;
     border-radius: 50%;
     display: inline-block;
-    border: skyblue solid 8px;
+    border: #3ec0f3 solid 8px;
 }
 
 .home .landing h1{
@@ -254,11 +314,89 @@ body {
 }
 
 .home .landing .link-icon a:hover{
-    background-color: skyblue;
+    background-color: #3ec0f3;
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 
+/* About Page */
+
+.about .about-content {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.about .about-content .about-img{
+    text-align: center;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.about .about-content .about-img img{
+    position: relative;
+    min-width: 200px;
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    border-radius: 10%;
+    border: #3ec0f3 solid 8px;
+}
+
+
+.about .about-content .about-text {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    text-align: right;
+}
+
+.about .about-content .about-text h3{
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #302e4d;
+}
+
+.about .about-content .about-text h3 span{
+    color: #3ec0f3;
+}
+
+.about .about-content .about-text p{
+    font-size: 16px;
+    line-height: 25px;
+    color: #504e70;
+    margin: 0;
+}
+
+.about .personal-info {
+    -ms-flex: 0 0 60%;
+    flex: 0 0 60%;
+    max-width: 60%;
+    margin-top: 40px;   
+}
+
+.about .personal-info .info-item{   
+    -ms-flex: 0 0 90%;
+    flex: 0 0 90%;
+    max-width: 90%;
+}
+   
+.about .personal-info .info-item p{   
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 0;
+    color: #302e4d;
+    border-bottom: 1px solid #e8dfec;
+}
+
+.about .personal-skills {
+    background-color: blue;
+    -ms-flex: 0 0 40%;
+    flex: 0 0 40%;
+    margin-top: 40px;
+    max-width: 40%;
+}
 
 
 
