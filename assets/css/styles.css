@@ -114,7 +114,7 @@ body {
 .btn:hover {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
-    color: #ffffff;
+    color: #302e4d;
 }
 
 .hidden {
@@ -243,6 +243,11 @@ body {
     text-transform: capitalize;
 }
 
+.aside .nav li a.active{
+    color: #3ec0f3;
+    padding-left: 3%;
+}
+
 .aside .nav li a .fa {    
     margin-right: 5px;
 }
@@ -340,12 +345,12 @@ body {
 }
 
 /* About Page */
-
 .about .about-content {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
 }
+
 .about .about-content .about-img{
     text-align: left;
     -ms-flex: 0 0 35%;
@@ -362,7 +367,6 @@ body {
     border-radius: 10%;
     border: #3ec0f3 solid 8px;
 }
-
 
 .about .about-content .about-text {
     -ms-flex: 0 0 65%;
@@ -390,9 +394,9 @@ body {
 }
 
 .about .about-content .personal-info {
-    -ms-flex: 0 0 60%;
-    flex: 0 0 60%;
-    max-width: 60%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
     margin-top: 40px;   
 }
 
@@ -426,40 +430,49 @@ body {
     margin-right: 15px;
 }
 
-
 .about .about-content .personal-skills {
-    -ms-flex: 0 0 40%;
-    flex: 0 0 40%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
     margin-top: 40px;
-    max-width: 40%;
+    max-width: 50%;
 }
 
 .about .about-content .personal-skills .skill-item{
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
-    margin-bottom: 30px;
-
+    margin-bottom: 25px;
 }
 
 .about .about-content .personal-skills .skill-item h5{
-    line-height: 40px;
+    line-height: 35px;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0;
+    color: #302e4d;
 }
 
 .about .about-content .personal-skills .skill-item .progress{
     background-color: #e3e3e3;
-    height: 10px;
-    /* overflow: hidden;
+    height: 20px;
+    position: relative; 
     width: 100%;
-    position: relative; */
-}
-.about .about-content .personal-skills .skill-item .progress-bar{
-    background-color: #3ec0f3;
+   
 }
 
-.about .about-content .personal-skills .skill-item .progress-percent{
+.about .about-content .personal-skills .skill-item .progress-bar{
     background-color: #3ec0f3;
+    height: 100%;
+    position: absolute;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 40px;
+    color: #302e4d;
 }
+
+/* Projects Page */
+
+
 
 
 
