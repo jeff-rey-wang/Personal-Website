@@ -393,7 +393,7 @@ body {
     margin: 0;
 }
 
-.about .about-content .personal-info {
+.about .about-content .personal-info{
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
@@ -471,8 +471,111 @@ body {
 }
 
 /* Projects Page */
+.projects .projects-prompt{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #504e70;
+}
 
+.projects .projects-item{
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 30px;
+}
 
+.projects .projects-item-inner{
+    border: 6px solid #fdf9ff;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.projects .projects-item-inner .projects-img img{
+    width: 100%;
+    display: block;
+}
+
+.projects .projects-item .projects-info{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    padding: 30px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.projects .projects-item-inner:hover .projects-info{
+    opacity: 1;
+}
+
+.projects .projects-item .projects-info h4{
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: capitalize;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+    opacity: 0;
+}
+
+.projects .projects-item-inner:hover .projects-info h4{
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+}
+
+.projects .projects-item-inner:hover .projects-info p{
+    color: #ffffff;
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+}
+
+.projects .projects-item .projects-info a .icon{
+    height: 40px;
+    width: 40px;
+    background-color: #ffffff;
+    color: #504e70;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
+    opacity: 0;
+}
+
+.projects .projects-item-inner:hover .projects-info .icon{
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.projects .projects-item-inner .projects-info .icon:hover{
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    color: #3ec0f3;
+}
+
+.projects .projects-item .projects-info .icon .fa{
+    line-height: 40px;
+}
 
 
 
