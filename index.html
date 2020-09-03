@@ -29,10 +29,10 @@
 
             <!-- Nav -->
             <ul class="nav">
-                <li><a href="#" class="active"><i class="fa fa-home"></i> Home</a></li>
-                <li><a href="#" class=""><i class="fa fa-coffee"></i> About</a></li>
-                <li><a href="#" class=""><i class="fa fa-briefcase"></i> Projects</a></li>
-                <li><a href="#" class=""><i class="fa fa-address-card"></i> Contact</a></li>
+                <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#about" class=""><i class="fa fa-coffee"></i> About</a></li>
+                <li><a href="#projects" class=""><i class="fa fa-briefcase"></i> Projects</a></li>
+                <li><a href="#contact" class=""><i class="fa fa-address-card"></i> Contact</a></li>
             </ul>
             <div class="copyright-text">
                 &copy; Jeffrey Wang 2020.
@@ -41,7 +41,7 @@
         <div class="main-content">
 
             <!-- Home Section -->
-            <section class="home section">
+            <section class="home section active" id="home">
                 <div class="container">
                     <div class="landing">
                         <img src="assets/img/jeff_0.jpg" alt="self-portrait" class="dark-shadow">
@@ -57,7 +57,7 @@
             </section>
 
             <!-- About Section -->
-            <section class="about section">
+            <section class="about section" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -109,8 +109,12 @@
                                     </div>
                                     <div class="row">
                                         <div class="buttons padd-15">
-                                            <button type="button" class="btn">Download Resume</button>     
-                                            <button type="button" class="btn">Contact Me</button>   
+                                            <a href="assets/Jeffrey_Wang_Resume.pdf" download="Jeffrey_Wang_Resume">
+                                                <button type="button" class="btn">Download Resume</button>     
+                                            </a>
+                                            <a href="#contact">
+                                                <button type="button" class="btn">Contact Me</button>
+                                            </a>
                                         </div>  
                                     </div>
                                 </div>
@@ -150,7 +154,7 @@
             </section>
 
             <!-- Projects Section -->
-            <section class="projects section">
+            <section class="projects section"id="projects">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -255,7 +259,7 @@
                 </div>
             </section>
 
-            <section class="contact section">
+            <section class="contact section"id="contact">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">

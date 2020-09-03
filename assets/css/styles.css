@@ -27,6 +27,47 @@ input,textarea,select{
     min-height: 100vh;
     display: block;
     padding: 0 30px;
+    position: fixed;
+    left: 270px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    opacity: 1;
+}
+
+.section .prev-section{
+    z-index: 1;
+}
+
+.section.active{
+    z-index: 2;
+    opacity: 1;
+    -webkit-animation: slideIn 0.5s ease;
+    animation: slideIn 0.5s ease;
+}
+@-webkit-keyframes slideIn{
+    0%{
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    100%{
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideIn{
+    0%{
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    100%{
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
 }
 
 .section .container {
@@ -81,10 +122,6 @@ input,textarea,select{
 
 .padd-15 {
     padding: 0 15px;
-}
-
-.main-content {
-    padding-left: 270px;
 }
 
 .container {
@@ -181,12 +218,10 @@ input,textarea,select{
     cursor: pointer;
     position: fixed;
     left: 300px;
-    top: 30px;
+    top: 20px;
     z-index: 11px;
     border-radius: 5px;
     background-color: #fdf9ff;
-    /* display: -ms-flexbox;
-    display: flex; */
     display: none;
     -ms-flex-align-items: center;
     align-items: center;
@@ -195,7 +230,7 @@ input,textarea,select{
 }
 
 .aside .nav-toggle span {
-    height: 5%;
+    height: 2px;
     width: 20px;
     display: inline-block;
     position: relative;
@@ -204,7 +239,7 @@ input,textarea,select{
 
 .aside .nav-toggle span::before {
     content: '';
-    height: 100%;
+    height: 2px;
     width: 20px;
     position: absolute;
     top:-7px;
@@ -215,7 +250,7 @@ input,textarea,select{
 
 .aside .nav-toggle span::after {
     content: '';
-    height: 100%;
+    height: 2px;
     width: 20px;
     position: absolute;
     top: 7px;
@@ -239,14 +274,14 @@ input,textarea,select{
     font-weight: 600;
     color:  #302e4d;
     text-decoration: none;
-    line-height: 49px;
+    line-height: 50px;
     display: block;
     text-transform: capitalize;
 }
 
 .aside .nav li a.active{
     color: #3ec0f3;
-    padding-left: 3%;
+    padding-left: 5px;
 }
 
 .aside .nav li a .fa {    
@@ -258,7 +293,7 @@ input,textarea,select{
     position: relative;
     display: block;
     height: 2px;
-    bottom: 15%;
+    bottom: 0;
     background: #3ec0f3;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
@@ -307,7 +342,7 @@ input,textarea,select{
     color: #302e4d;
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
-    margin: 2% 0 1%;
+    margin: 10px 0 5px;
 }
 
 .home .landing p{
@@ -320,7 +355,7 @@ input,textarea,select{
 
 .home .landing .link-icon{
     align-items: center;
-    margin-top: 1%;
+    margin-top: 10px;
 }
 
 .home .landing .link-icon a{
@@ -545,7 +580,6 @@ input,textarea,select{
     font-size: 16px;
     font-weight: 400;
     color: #ffffff;
-    text-transform: capitalize;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     -webkit-transform: translateX(-20px);
@@ -680,8 +714,13 @@ input,textarea,select{
     .aside{
         left: -270px;
     }
-    .main-content{
-        padding-left: 0;
+    .aside .nav-toggle{
+        display: -ms-flex;
+        display: flex;
+        left: 30px;
+    }
+    .section{
+        left: 0;
     }
     .about .about-content .personal-info .info-item p span{
         display: block;
