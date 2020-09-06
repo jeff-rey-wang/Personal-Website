@@ -5,7 +5,7 @@ const nav = document.querySelector(".nav"),
       allSection = document.querySelectorAll(".section"),
       totalSection = allSection.length;
 
-for(let i=0; i<totalNavList; i++){
+for(let i = 0; i < totalNavList; i++){
     const a = navList[i].querySelector("a");
     a.addEventListener("click", function(){
         for(let i = 0; i < totalSection; i++){
@@ -20,14 +20,31 @@ for(let i=0; i<totalNavList; i++){
         }
 
         this.classList.add("active");
-
         showSection(this);
+
+        if(window.innerWidth < 1200){
+            asideToggle();
+        }
     })
 }
+
 function showSection(element){
     for(let i = 0; i < totalSection; i++){
         allSection[i].classList.remove("active");
     }
     target = element.getAttribute("href").split("#")[1];
     document.querySelector("#" + target).classList.add("active");
+}
+
+const navToggleBtn = document.querySelector(".nav-toggle"),
+      aside = document.querySelector(".aside");
+
+navToggleBtn.addEventListener("click", asideToggle);
+
+function asideToggle(){
+    aside.classList.toggle("open");
+    navToggleBtn.classList.toggle("open");
+    for(let i = 0; i < totalSection; i++){
+        allSection[i].classList.toggle("open");
+    }
 }
