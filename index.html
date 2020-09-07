@@ -24,26 +24,28 @@
         <!-- Aside -->
         <div class="aside">
 
-            <!-- Logo -->
-            <div class="logo">
-                <a href="#">Jeffrey</a>
-            </div>
-
             <!-- Nav Toggle-->
             <div class="nav-toggle">
                 <span></span>
             </div>
             
+            <div class="aside-inner">
 
-            <!-- Nav -->
-            <ul class="nav">
-                <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
-                <li><a href="#about" class=""><i class="fa fa-coffee"></i> About</a></li>
-                <li><a href="#projects" class=""><i class="fa fa-briefcase"></i> Projects</a></li>
-                <li><a href="#contact" class=""><i class="fa fa-address-card"></i> Contact</a></li>
-            </ul>
-            <div class="copyright-text">
-                &copy; Jeffrey Wang 2020.
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="#">Jeffrey</a>
+                </div>
+                
+                <!-- Nav -->
+                <ul class="nav">
+                    <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#about" class=""><i class="fa fa-coffee"></i> About</a></li>
+                    <li><a href="#projects" class=""><i class="fa fa-briefcase"></i> Projects</a></li>
+                    <li><a href="#contact" class=""><i class="fa fa-address-card"></i> Contact</a></li>
+                </ul>
+                <div class="copyright-text">
+                    &copy; Jeffrey Wang 2020.
+                </div>
             </div>
         </div>
         <div class="main-content">
@@ -56,9 +58,9 @@
                         <h1>Jeffrey Wang</h1>
                         <p>Software Engineering Student</p>
                         <div class="link-icon">
-                            <a href="#"><i class="fa fa-github"></i></a>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                            <a href="#"><i class="fa fa-envelope"></i></a>
+                            <a href="https://github.com/jeff-rey-wang" target="_blank"><i class="fa fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/wangw115/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                            <a href="#contact" data-section-index="1" class="email-btn"><i class="fa fa-envelope"></i></a>
                         </div>               
                     </div>
                 </div>
@@ -120,7 +122,7 @@
                                             <a href="assets/Jeffrey_Wang_Resume.pdf" download="Jeffrey_Wang_Resume">
                                                 <button type="button" class="btn">Download Resume</button>     
                                             </a>
-                                            <a href="#contact">
+                                            <a href="#contact" data-section-index="1" class="contact-me">
                                                 <button type="button" class="btn">Contact Me</button>
                                             </a>
                                         </div>  
@@ -189,7 +191,7 @@
                                         <br>
                                         Developed with: React.js, TensorFlow, Node.js, Arduino, MongoDB
                                     </p>
-                                    <a href="https://github.com/cathkyu/deltahacks2020">
+                                    <a href="https://github.com/cathkyu/deltahacks2020" target="_blank">
                                         <div class="icon">
                                             <i class="fa fa-search"></i>
                                         </div>
@@ -255,7 +257,7 @@
                                         <br>
                                         Written in: Java
                                     </p>
-                                    <a href="https://github.com/jeff-rey-wang/Algorithms-Data-Structure-Library">
+                                    <a href="https://github.com/jeff-rey-wang/Algorithms-Data-Structure-Library" target="_blank">
                                         <div class="icon">
                                             <i class="fa fa-search"></i>
                                         </div>
@@ -296,39 +298,39 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="contact-form padd-15">
+                        <form id="email-form" method="post" action="contact-form.php" class="contact-form padd-15">
                             <div class="row">
                                 <div class="form-field col-6 padd-15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name*">
+                                        <input name="name" type="text" class="form-control" placeholder="Name*" required>
                                     </div>
                                 </div>
                                 <div class="form-field col-6 padd-15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Email*">
+                                        <input name="email" type="text" class="form-control" placeholder="Email*" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-field col-12 padd-15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Subject*">
+                                        <input name="subject" type="text" class="form-control" placeholder="Subject*" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-field col-12 padd-15">
                                     <div class="form-group">
-                                        <textarea class="form-control" placeholder="Your Message..."></textarea>
+                                        <textarea name="message" class="form-control" placeholder="Your Message..." required></textarea>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-12 padd-15">
-                                    <button type="submit" class="btn">Send</button>
+                                    <input type="submit" class="form-control submit btn" value="Send">
                                 </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </section>
