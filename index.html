@@ -298,25 +298,38 @@
                         </div>
                     </div>
                     <div class="row">
-                        <form id="email-form" method="POST" action="https://formspree.io/xvoweljb" class="contact-form padd-15">
-                            <label>
-                                Name:
-                                <input type="text" name="name">
-                            </label>
-                            <label>
-                                Email:
-                                <input type="text" name="_replyto">
-                            </label>
-                            <label>
-                                Subject:
-                                <input type="text" name="subject">
-                            </label>
-                            <label>
-                                Message:
-                                <textarea name="message"></textarea>
-                            </label>
-                                                    
-                              <button type="submit">Send</button>
+                        <form id="email-form" method="post" action="https://formspree.io/xvoweljb" class="contact-form padd-15">
+                            <div class="row">
+                                <div class="form-field col-6 padd-15">
+                                    <div class="form-group">
+                                        <input name="name" type="text" class="form-control" placeholder="Name*" required>
+                                    </div>
+                                </div>
+                                <div class="form-field col-6 padd-15">
+                                    <div class="form-group">
+                                        <input name="_replyto" type="text" class="form-control" placeholder="Email*" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-field col-12 padd-15">
+                                    <div class="form-group">
+                                        <input name="subject" type="text" class="form-control" placeholder="Subject*" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-field col-12 padd-15">
+                                    <div class="form-group">
+                                        <textarea name="message" class="form-control" placeholder="Your Message..." required></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 padd-15">
+                                    <input type="submit" class="form-control submit btn" value="Send">
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>
